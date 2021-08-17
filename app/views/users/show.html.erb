@@ -1,0 +1,9 @@
+<h1>User info</h1>
+
+<h3><%= @user.name %></h3>
+
+<%= link_to 'Back', new_user_path %>
+
+<% @user.projects.each do |project| %>
+  <p>- <%= project.name %></p>
+<% end %>
