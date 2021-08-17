@@ -324,7 +324,7 @@ Style/ReturnNil:
 Style/StringHashKeys:
   Enabled: true
   Exclude:
-    - "spec/services/parser_spec.rb"
+    - "app/services/github_service.rb"
 
 Style/MethodCallWithArgsParentheses:
   Enabled: true

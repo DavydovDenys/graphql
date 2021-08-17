@@ -6,7 +6,7 @@ class GithubService
   USERS_API = 'https://api.github.com/users/'
   REPOS     = '/repos'
   def initialize(login)
-    @login = login.gsub(' ', '')
+    @login = login.delete(' ')
   end
 
   def name
@@ -35,7 +35,7 @@ class GithubService
 
   def fetch_data(url)
     reponse = Net::HTTP.get(url)
-    json    =  JSON.parse(reponse)
+    json    = JSON.parse(reponse)
 
     if json.is_a?(Hash) && json.key?('message') && url.to_s.end_with?('repos')
       json = ['name' => 'N/A']
