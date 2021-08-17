@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/dhh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.github.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Mon, 16 Aug 2021 12:55:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"4497f02a0a73ca49d1537f4263871c58ea5ec2e1a82f46f3508d197a81edb9b0"
+      Last-Modified:
+      - Wed, 11 Aug 2021 12:45:44 GMT
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      X-Ratelimit-Reset:
+      - '1629121687'
+      X-Ratelimit-Resource:
+      - core
+      X-Ratelimit-Used:
+      - '2'
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '479'
+      X-Github-Request-Id:
+      - C0B2:F603:4A2FABE:4BC6C58:611A602F
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"dhh","id":2741,"node_id":"MDQ6VXNlcjI3NDE=","avatar_url":"https://avatars.githubusercontent.com/u/2741?v=4","gravatar_id":"","url":"https://api.github.com/users/dhh","html_url":"https://github.com/dhh","followers_url":"https://api.github.com/users/dhh/followers","following_url":"https://api.github.com/users/dhh/following{/other_user}","gists_url":"https://api.github.com/users/dhh/gists{/gist_id}","starred_url":"https://api.github.com/users/dhh/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dhh/subscriptions","organizations_url":"https://api.github.com/users/dhh/orgs","repos_url":"https://api.github.com/users/dhh/repos","events_url":"https://api.github.com/users/dhh/events{/privacy}","received_events_url":"https://api.github.com/users/dhh/received_events","type":"User","site_admin":false,"name":"David
+        Heinemeier Hansson","company":"Basecamp","blog":"https://dhh.dk","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":25,"public_gists":51,"followers":16013,"following":0,"created_at":"2008-03-10T17:53:51Z","updated_at":"2021-08-11T12:45:44Z"}'
+  recorded_at: Mon, 16 Aug 2021 12:55:12 GMT
+recorded_with: VCR 6.0.0
