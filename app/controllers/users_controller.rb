@@ -20,6 +20,7 @@ class UsersController < ApplicationController
       end
       redirect_to @user
     else
+      @user.errors.add(:user, 'you\'re looking for can\'t be found.')
       render :new
     end
   end

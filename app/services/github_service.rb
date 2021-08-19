@@ -12,7 +12,7 @@ class GithubService
   def name
     url                       = URI([USERS_API, @login].join)
     @name                     = fetch_data(url)['name']
-    git_name_params           = ActionController::Parameters.new({ git_name: { name: @name || 'NA' } })
+    git_name_params           = ActionController::Parameters.new({ git_name: { name: @name } })
     git_name_params.require(:git_name).permit(:name)
   end
 
